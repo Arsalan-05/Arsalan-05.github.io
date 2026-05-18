@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arsalan — Software Engineer</title>
+<title>Arsalan — AI Full-Stack Software Engineer</title>
 <meta name="description" content="CS student at York University building full-stack systems and AI-powered applications. Open to Summer 2027 internships.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -137,8 +137,8 @@ h1{animation-delay:0.2s}
 
 <section class="hero">
   <div class="hero-tag">available for Summer 2027 internships</div>
-  <h1>Arsalan<br><span>Software Engineer</span></h1>
-  <p class="hero-sub">CS student @ York University building full-stack systems and AI-powered applications. I treat AI integration as infrastructure — LLM APIs, vector search, and agent workflows are part of how I build, not bolted on afterward.</p>
+  <h1>Arsalan<br><span>AI Full-Stack<br>Software Engineer</span></h1>
+  <p class="hero-sub">CS student @ York University building full-stack systems and AI-powered applications. I treat AI integration as infrastructure — LLM APIs, vector search, RAG pipelines, and agent workflows are part of how I build, not bolted on afterward.</p>
   <div class="hero-actions">
     <a href="#projects" class="btn-primary">view projects →</a>
     <a href="https://github.com/Arsalan-05" class="btn-outline">
@@ -164,22 +164,22 @@ h1{animation-delay:0.2s}
   <div class="section-tag">portfolio</div>
   <h2>Projects <span class="dim">// production systems</span></h2>
   <div class="projects-grid">
+
     <div class="project-card featured">
       <div class="project-header">
         <div class="project-title">RoomFinderAI</div>
-        <div class="project-badges"><span class="badge badge-green">live</span><span class="badge badge-blue">collaborative</span></div>
+        <div class="project-badges"><span class="badge badge-green">live</span><span class="badge badge-blue">co-founder</span></div>
       </div>
-      <p class="project-desc">AI-powered rental market platform — helps users find, evaluate, and negotiate rental opportunities. Built and deployed as a production system on Railway with Supabase as the backend infrastructure.</p>
+      <p class="project-desc">AI-powered rental market analysis and negotiation platform — helps users find, evaluate, and negotiate rental opportunities. Built and deployed as a production system on Railway with Supabase as the backend infrastructure.</p>
       <ul class="project-features">
-        <li>AI negotiation engine with counter-offers, market estimation & landlord prediction</li>
-        <li>Real-time chat via Supabase Realtime subscriptions</li>
-        <li>Full auth — email/password, Google OAuth, Apple Sign-In</li>
-        <li>Property photo AI analysis via Cloudflare Workers AI (Llama 3.2 Vision)</li>
-        <li>60+ REST endpoints, 27 SQL migrations, native iOS & Android apps</li>
-        <li>Stripe payments, Azure identity verification, PWA support</li>
+        <li>LLM negotiation engine — 8-phase conversation flow, landlord personality modeling, 82% win rate on top template across 1,247 negotiations</li>
+        <li>Real-time chat via Supabase Realtime · Full auth stack — email, Google OAuth, Apple Sign-In</li>
+        <li>Property photo AI via Llama 3.2 Vision on Cloudflare Workers AI — grades units A+ to C-</li>
+        <li>True cost calculator fusing 15+ external APIs (RentCast, Google Maps, GreatSchools, FEMA, BLS)</li>
+        <li>60+ REST endpoints · 27 SQL migrations · Stripe payments · Azure identity verification</li>
       </ul>
       <div class="project-tech">
-        <span class="tech-tag">Node.js</span><span class="tech-tag">Supabase</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">OpenAI</span><span class="tech-tag">Docker</span><span class="tech-tag">Railway</span><span class="tech-tag">SwiftUI</span><span class="tech-tag">Java</span>
+        <span class="tech-tag">Node.js</span><span class="tech-tag">Supabase</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">OpenAI</span><span class="tech-tag">Docker</span><span class="tech-tag">Railway</span><span class="tech-tag">JavaScript</span>
       </div>
       <div class="project-links">
         <a href="https://github.com/Arsalan-05/RoomFinderAI" class="project-link">
@@ -191,26 +191,28 @@ h1{animation-delay:0.2s}
 
     <div class="project-card">
       <div class="project-header">
-        <div class="project-title">LifeLoop AI</div>
-        <div class="project-badges"><span class="badge badge-orange">in progress</span><span class="badge badge-blue">solo</span></div>
+        <div class="project-title">FinSight AI</div>
+        <div class="project-badges"><span class="badge badge-orange">in development</span><span class="badge badge-blue">solo</span></div>
       </div>
-      <p class="project-desc">Intelligent productivity and learning optimization system for CS students — integrating task tracking, scheduling, energy management, and AI-assisted decision support. Built entirely end-to-end by me.</p>
+      <p class="project-desc">Full-stack personal finance intelligence agent — built end to end independently. Connects to user financial data, builds a RAG knowledge base over transaction history, and delivers answers, spending analysis, and personalized recommendations through a conversational interface.</p>
       <ul class="project-features">
-        <li>Onboarding flow with personal dashboard and focus tracking</li>
-        <li>Energy curve visualization and weekly review system</li>
-        <li>Full dark/light theme support, data export, Railway deployment</li>
-        <li>Expanding to FastAPI backend + PostgreSQL + live AI integration</li>
+        <li>RAG pipeline over personal financial data — chunking, embedding, pgvector retrieval</li>
+        <li>Stateful agent workflows via LangGraph — memory, tool use, and decision loops</li>
+        <li>MCP-connected external tools — currency conversion, market data, budget categories</li>
+        <li>Anthropic Claude API integration throughout · Full auth · Real-time chat interface</li>
+        <li>Containerized with Docker · Deployed on Railway</li>
       </ul>
       <div class="project-tech">
-        <span class="tech-tag">JavaScript</span><span class="tech-tag">Node.js</span><span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Next.js</span><span class="tech-tag">Railway</span>
+        <span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">pgvector</span><span class="tech-tag">Next.js</span><span class="tech-tag">LangGraph</span><span class="tech-tag">Claude API</span><span class="tech-tag">MCP</span><span class="tech-tag">Docker</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Arsalan-05/LifeLoopAI" class="project-link">
+        <a href="https://github.com/Arsalan-05/FinSight_AI" class="project-link">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
           View on GitHub
         </a>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -225,15 +227,15 @@ h1{animation-delay:0.2s}
   </div>
   <div class="stack-section-label">// frameworks & runtime</div>
   <div class="stack-grid">
-    <div class="stack-pill hot">Node.js</div><div class="stack-pill hot">FastAPI</div><div class="stack-pill">Next.js</div><div class="stack-pill">React</div><div class="stack-pill">Express</div>
+    <div class="stack-pill hot">FastAPI</div><div class="stack-pill hot">Node.js</div><div class="stack-pill">Next.js</div><div class="stack-pill">React</div><div class="stack-pill">Express</div>
   </div>
   <div class="stack-section-label">// data & infrastructure</div>
   <div class="stack-grid">
-    <div class="stack-pill hot">PostgreSQL</div><div class="stack-pill hot">Supabase</div><div class="stack-pill">Docker</div><div class="stack-pill">Railway</div><div class="stack-pill">Git</div>
+    <div class="stack-pill hot">PostgreSQL</div><div class="stack-pill hot">pgvector</div><div class="stack-pill hot">Supabase</div><div class="stack-pill">Docker</div><div class="stack-pill">Railway</div><div class="stack-pill">Git</div>
   </div>
   <div class="stack-section-label">// AI & integration layer</div>
   <div class="stack-grid">
-    <div class="stack-pill hot">LLM APIs</div><div class="stack-pill hot">OpenAI</div><div class="stack-pill">REST APIs</div><div class="stack-pill">Vector Search</div><div class="stack-pill">Cloudflare Workers</div>
+    <div class="stack-pill hot">LLM APIs</div><div class="stack-pill hot">RAG Pipelines</div><div class="stack-pill hot">LangGraph</div><div class="stack-pill hot">Anthropic Claude</div><div class="stack-pill hot">MCP</div><div class="stack-pill">Vector Search</div><div class="stack-pill">OpenAI</div><div class="stack-pill">REST APIs</div>
   </div>
 </section>
 
@@ -243,14 +245,25 @@ h1{animation-delay:0.2s}
   <div class="section-tag">experience</div>
   <h2>Work <span class="dim">// engineering history</span></h2>
   <div class="exp-list">
+
     <div class="exp-card">
       <div>
-        <div class="exp-role">Independent Software Developer</div>
-        <div class="exp-org">Self-Employed — RoomFinderAI & LifeLoop AI</div>
-        <div class="exp-desc">Building two production-level software systems alongside my CS degree. Full ownership across architecture, backend, frontend, database design, and AI integration. Not academic exercises — systems built to ship.</div>
+        <div class="exp-role">Founder & Lead Engineer</div>
+        <div class="exp-org">Self-Employed — FinSight AI</div>
+        <div class="exp-desc">Building a full-stack personal finance intelligence agent end to end independently. RAG pipeline over financial data, stateful LangGraph agent workflows, MCP-connected external tools, Anthropic Claude API integration. Full ownership across FastAPI backend, PostgreSQL + pgvector, Next.js frontend, Docker, and Railway deployment.</div>
+      </div>
+      <div><div class="exp-date">May 2026 — Present</div><div class="exp-status">● active</div></div>
+    </div>
+
+    <div class="exp-card">
+      <div>
+        <div class="exp-role">Co-Founder & Full-Stack Engineer</div>
+        <div class="exp-org">Self-Employed — RoomFinderAI</div>
+        <div class="exp-desc">Building a production AI-powered rental market analysis and negotiation platform collaboratively. Contributing across the full stack — backend architecture, LLM integration, real-time chat, auth stack, and external API integrations. System is deployed and live on Railway.</div>
       </div>
       <div><div class="exp-date">May 2025 — Present</div><div class="exp-status">● active</div></div>
     </div>
+
     <div class="exp-card" style="border-style:dashed;opacity:0.75">
       <div>
         <div class="exp-role">Software Engineering Intern</div>
@@ -259,6 +272,7 @@ h1{animation-delay:0.2s}
       </div>
       <div><div class="exp-date">Summer 2027</div><div style="font-family:var(--mono);font-size:10px;color:var(--text3);margin-top:4px">upcoming</div></div>
     </div>
+
     <div class="exp-card" style="border-style:dashed;opacity:0.5">
       <div>
         <div class="exp-role">Software Engineering Intern</div>
@@ -267,6 +281,7 @@ h1{animation-delay:0.2s}
       </div>
       <div><div class="exp-date">Summer 2028</div><div style="font-family:var(--mono);font-size:10px;color:var(--text3);margin-top:4px">upcoming</div></div>
     </div>
+
   </div>
 </section>
 
@@ -280,8 +295,8 @@ h1{animation-delay:0.2s}
       <div class="edu-school">York University</div>
       <div class="edu-degree">BSc Computer Science — Lassonde School of Engineering</div>
       <div class="edu-detail">Sep 2024 — Aug 2028</div>
-      <div class="edu-detail">CGPA 4.41 · EECS GPA 5.33</div>
-      <div class="edu-detail">CS Hub · AWS Cloud Club · AI & Data Science Club</div>
+      <div class="edu-detail">CGPA 4.42 · EECS GPA 5.33</div>
+      <div class="edu-detail">CS Hub · AWS Cloud Club · AI & Data Science Club · YU Blueprint</div>
       <div class="edu-awards">
         <div class="award">International Entrance Award for Academic Excellence</div>
         <div class="award">Lassonde Entrance Scholarship</div>
@@ -309,11 +324,13 @@ h1{animation-delay:0.2s}
   <div class="about-grid">
     <div class="about-text">
       <p>I'm a CS student at York University building full-stack systems and AI-powered applications. My focus is the full stack — front end, back end, databases, APIs, and everything in between.</p>
-      <p><strong>The goal is not to build AI.</strong> The goal is to be the engineer who builds WITH AI — who can direct it, validate its output, integrate it into real systems, own the production consequences, and deliver what AI alone cannot: judgment, architecture, security, and shipping discipline.</p>
+      <p><strong>The goal is not to build AI.</strong> The goal is to be the AI full-stack software engineer who builds WITH AI — who can direct it, validate its output, integrate it into real systems, own the production consequences, and deliver what AI alone cannot: judgment, architecture, security, and shipping discipline.</p>
       <p>AI commoditizes engineers who scaffold CRUD apps. It cannot replace engineers who understand why an architecture decision is correct, who can debug distributed systems failures, and who own production reliability.</p>
       <div class="terminal-block">
         <div class="terminal-line"><span class="prompt">→</span> whoami</div>
-        <div class="terminal-line"><span class="out">arsalan — ai-native full-stack engineer</span></div>
+        <div class="terminal-line"><span class="out">arsalan — ai full-stack software engineer</span></div>
+        <div class="terminal-line" style="margin-top:8px"><span class="prompt">→</span> stack</div>
+        <div class="terminal-line"><span class="out">python · fastapi · postgres · langgraph · mcp · nextjs</span></div>
         <div class="terminal-line" style="margin-top:8px"><span class="prompt">→</span> status</div>
         <div class="terminal-line"><span class="out">open to summer 2027 internships</span></div>
         <div class="terminal-line" style="margin-top:8px"><span class="prompt">→</span> location</div>
@@ -325,7 +342,7 @@ h1{animation-delay:0.2s}
       <div class="moats">
         <div class="moat"><div class="moat-title">Systems judgment</div><div class="moat-desc">Knowing WHY an architecture decision is correct. AI proposes — you decide, defend, and own.</div></div>
         <div class="moat"><div class="moat-title">Production debugging</div><div class="moat-desc">Distributed traces, race conditions, cascading failures. AI is genuinely weak here.</div></div>
-        <div class="moat"><div class="moat-title">AI integration as infrastructure</div><div class="moat-desc">LLM APIs, vector search, RAG pipelines as normal engineering — not magic bolted on.</div></div>
+        <div class="moat"><div class="moat-title">AI integration as infrastructure</div><div class="moat-desc">LLM APIs, RAG pipelines, LangGraph agents, MCP tooling as normal engineering — not magic bolted on.</div></div>
         <div class="moat"><div class="moat-title">Security & reliability thinking</div><div class="moat-desc">AI generates insecure code constantly. Auditing and hardening is irreplaceable work.</div></div>
         <div class="moat"><div class="moat-title">Product engineering judgment</div><div class="moat-desc">Tradeoffs, shipping decisions, what to cut and why. AI has no skin in the game.</div></div>
       </div>

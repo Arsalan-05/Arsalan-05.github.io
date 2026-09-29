@@ -206,18 +206,19 @@ h1{animation-delay:0.2s}
     <div class="project-card">
       <div class="project-header">
         <div class="project-title">FinSight AI</div>
-        <div class="project-badges"><span class="badge badge-green">live · v1.5.1</span><span class="badge badge-blue">solo</span></div>
+        <div class="project-badges"><span class="badge badge-green">live · v2.0</span><span class="badge badge-blue">solo</span></div>
       </div>
-      <p class="project-desc">Personal finance intelligence agent built independently from the ground up. Connects to user financial data, builds a RAG knowledge base over transaction history, and delivers answers, spending analysis, and personalized recommendations through a conversational interface. Shipped and live in production (v1.5.1).</p>
+      <p class="project-desc">Personal finance intelligence agent built solo from the ground up: RAG over transaction history, stateful LangGraph agents, and MCP-connected tools. v2.0 hardened it into a production system with an automated eval suite, end-to-end tracing, guardrails, and multi-provider model routing. The full stack (frontend, backend API, and database) runs on Railway.</p>
       <ul class="project-features">
         <li>RAG pipeline over personal financial data - chunking, embedding, pgvector retrieval</li>
-        <li>Stateful agent workflows via LangGraph - memory, tool use, and decision loops</li>
-        <li>MCP-connected external tools - currency conversion, market data, budget categories</li>
-        <li>Groq (Llama 3.1) for chat, Voyage for embeddings/search · Full auth · Real-time chat interface</li>
-        <li>Containerized with Docker · Deployed in production on Vercel (frontend) + Render (backend) + Supabase (DB/auth)</li>
+        <li>Stateful LangGraph agent with MCP tools (currency conversion, market data, budget categories) - step and cost limits, retries, timeouts, fallbacks</li>
+        <li>Automated eval suite in CI - retrieval recall@k and answer-quality metrics catch regressions before deploy</li>
+        <li>End-to-end tracing of every LLM and tool call - latency, token, and cost-per-request dashboard</li>
+        <li>Model routing across Azure OpenAI and AWS Bedrock with response caching · prompt-injection test cases + guardrails</li>
+        <li>Deployed entirely on Railway - Next.js frontend, FastAPI backend, PostgreSQL + pgvector · Docker + GitHub Actions CI</li>
       </ul>
       <div class="project-tech">
-        <span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">pgvector</span><span class="tech-tag">Next.js</span><span class="tech-tag">LangGraph</span><span class="tech-tag">Groq</span><span class="tech-tag">Voyage</span><span class="tech-tag">MCP</span><span class="tech-tag">Docker</span>
+        <span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Next.js</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">pgvector</span><span class="tech-tag">LangGraph</span><span class="tech-tag">MCP</span><span class="tech-tag">Azure OpenAI</span><span class="tech-tag">AWS Bedrock</span><span class="tech-tag">Langfuse</span><span class="tech-tag">Docker</span><span class="tech-tag">GitHub Actions</span><span class="tech-tag">Railway</span>
       </div>
       <div class="project-links">
         <a href="https://github.com/Arsalan-05/FinSight_AI" class="project-link">
@@ -268,11 +269,11 @@ h1{animation-delay:0.2s}
   </div>
   <div class="stack-section-label">// data & infrastructure</div>
   <div class="stack-grid">
-    <div class="stack-pill hot">PostgreSQL</div><div class="stack-pill hot">pgvector</div><div class="stack-pill hot">Supabase</div><div class="stack-pill">Redis</div><div class="stack-pill">Docker</div><div class="stack-pill">Railway</div><div class="stack-pill">Git</div><div class="stack-pill">Linux</div>
+    <div class="stack-pill hot">PostgreSQL</div><div class="stack-pill hot">pgvector</div><div class="stack-pill hot">Railway</div><div class="stack-pill">Supabase</div><div class="stack-pill">Redis</div><div class="stack-pill">Docker</div><div class="stack-pill">GitHub Actions</div><div class="stack-pill">Git</div><div class="stack-pill">Linux</div>
   </div>
   <div class="stack-section-label">// AI & integration layer</div>
   <div class="stack-grid">
-    <div class="stack-pill hot">LLM APIs</div><div class="stack-pill hot">RAG Pipelines</div><div class="stack-pill hot">LangGraph</div><div class="stack-pill hot">Groq</div><div class="stack-pill hot">MCP</div><div class="stack-pill">Vector Search</div><div class="stack-pill">Voyage</div><div class="stack-pill">OpenAI</div><div class="stack-pill">Prompt Engineering</div><div class="stack-pill">REST APIs</div>
+    <div class="stack-pill hot">LLM APIs</div><div class="stack-pill hot">RAG Pipelines</div><div class="stack-pill hot">LangGraph</div><div class="stack-pill hot">MCP</div><div class="stack-pill hot">LLM Evaluation</div><div class="stack-pill hot">Azure OpenAI</div><div class="stack-pill hot">AWS Bedrock</div><div class="stack-pill">Langfuse</div><div class="stack-pill">Vector Search</div><div class="stack-pill">OpenAI</div><div class="stack-pill">Prompt Engineering</div><div class="stack-pill">REST APIs</div>
   </div>
   <div class="stack-section-label">// model & GPU layer</div>
   <div class="stack-grid">
@@ -300,9 +301,9 @@ h1{animation-delay:0.2s}
       <div>
         <div class="exp-role">Founder &amp; AI Software Engineer</div>
         <div class="exp-org">FinSight AI</div>
-        <div class="exp-desc">Built a personal finance intelligence agent independently from the ground up - RAG pipeline over financial data, stateful LangGraph agent workflows, MCP-connected external tools, Groq (Llama 3.1) for chat and Voyage for embeddings. Full ownership across FastAPI backend, PostgreSQL + pgvector, Next.js frontend, Docker, and production deployment on Vercel + Render + Supabase. Shipped and live in production (v1.5.1).</div>
+        <div class="exp-desc">Built a personal finance intelligence agent solo from the ground up - RAG pipeline over financial data, stateful LangGraph agent workflows, and MCP-connected external tools. Hardened it in v2.0 with an automated eval suite in CI, end-to-end LLM tracing, agent limits and prompt-injection guardrails, and model routing across Azure OpenAI and AWS Bedrock with response caching. Full ownership across the Next.js frontend, FastAPI backend, and PostgreSQL + pgvector database, all deployed on Railway with Docker and GitHub Actions CI.</div>
       </div>
-      <div><div class="exp-date">May 2026 - Jul 2026</div><div class="exp-status">● shipped · v1.5.1</div></div>
+      <div><div class="exp-date">May 2026 - Present</div><div class="exp-status">● shipped · v2.0</div></div>
     </div>
 
     <div class="exp-card">
@@ -362,7 +363,7 @@ h1{animation-delay:0.2s}
         <div class="terminal-line"><span class="prompt">→</span> whoami</div>
         <div class="terminal-line"><span class="out">arsalan - ai software engineer</span></div>
         <div class="terminal-line" style="margin-top:8px"><span class="prompt">→</span> stack</div>
-        <div class="terminal-line"><span class="out">python · java · c · javascript · fastapi · nodejs · nextjs · postgres · langgraph · mcp · groq · voyage</span></div>
+        <div class="terminal-line"><span class="out">python · java · c · javascript · fastapi · nodejs · nextjs · postgres · langgraph · mcp · azure openai · aws bedrock · railway</span></div>
         <div class="terminal-line" style="margin-top:8px"><span class="prompt">→</span> model_layer</div>
         <div class="terminal-line"><span class="out">pytorch · triton · lora/qlora · unsloth · kaggle gpu</span></div>
         <div class="terminal-line" style="margin-top:8px"><span class="prompt">→</span> status</div>
@@ -374,11 +375,11 @@ h1{animation-delay:0.2s}
     <div>
       <div class="stack-section-label">// how I engineer</div>
       <div class="moats">
-        <div class="moat"><div class="moat-title">Verify before I trust</div><div class="moat-desc">On KernelForge I built the correctness and speedup harness before any fine-tuning. Nothing gets reported that can't be proven.</div></div>
-        <div class="moat"><div class="moat-title">Ship end to end</div><div class="moat-desc">FinSight AI: backend, frontend, data pipeline, and deployment, owned solo and live in production.</div></div>
-        <div class="moat"><div class="moat-title">AI as normal engineering</div><div class="moat-desc">LLM APIs, RAG pipelines, LangGraph agents, and MCP tooling, built with the same care as any other production service.</div></div>
+        <div class="moat"><div class="moat-title">Verify before I trust</div><div class="moat-desc">On KernelForge I built the correctness and speedup harness before any fine-tuning. On FinSight every change runs through an eval suite in CI. Nothing gets reported that can't be proven.</div></div>
+        <div class="moat"><div class="moat-title">Ship end to end</div><div class="moat-desc">FinSight AI: frontend, backend API, database, and deployment on Railway, owned solo and hardened to v2.0 in production.</div></div>
+        <div class="moat"><div class="moat-title">AI as normal engineering</div><div class="moat-desc">LLM APIs, RAG pipelines, LangGraph agents, and MCP tooling, shipped with evals, tracing, and guardrails like any other production service.</div></div>
         <div class="moat"><div class="moat-title">Work across the stack</div><div class="moat-desc">From product features on web, iOS, and Android (RoomFinderAI) down to fine-tuned models and Triton GPU kernels (KernelForge).</div></div>
-        <div class="moat"><div class="moat-title">Model-level judgment</div><div class="moat-desc">Knowing when a task needs a fine-tuned model versus a prompted API call, and what inference actually costs.</div></div>
+        <div class="moat"><div class="moat-title">Model-level judgment</div><div class="moat-desc">Knowing when a task needs a fine-tuned model versus a prompted API call, routing simple queries to cheaper models, and what inference actually costs.</div></div>
       </div>
     </div>
   </div>

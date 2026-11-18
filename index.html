@@ -23,9 +23,9 @@ nav{position:sticky;top:0;z-index:100;background:rgba(8,12,16,0.9);backdrop-filt
 .nav-links a:hover{color:var(--text)}
 .nav-cta{font-family:var(--mono);font-size:12px;color:var(--accent2);border:1px solid var(--accent2);padding:6px 16px;border-radius:4px;transition:all 0.2s}
 .nav-cta:hover{background:rgba(63,185,80,0.1)}
-section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
+section{max-width:1100px;margin:0 auto;padding:3.5rem 2rem}
 .divider{border:none;border-top:1px solid var(--border);margin:0}
-.hero{padding-top:7rem;padding-bottom:7rem}
+.hero{padding-top:5rem;padding-bottom:5rem}
 .hero-tag{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:0.1em;margin-bottom:1.5rem;display:flex;align-items:center;gap:8px}
 .hero-tag::before{content:'';width:24px;height:1px;background:var(--accent)}
 h1{font-size:clamp(2.5rem,5vw,4.5rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:1.5rem}
@@ -58,6 +58,10 @@ h2 .dim{color:var(--text3)}
 .project-card:hover{border-color:var(--border2);transform:translateY(-2px)}
 .project-card.featured::before{background:linear-gradient(90deg,var(--accent2),transparent)}
 .project-card.inprogress::before{background:linear-gradient(90deg,var(--accent3),transparent)}
+.results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.results-grid .project-card{padding:1.5rem}
+.results-grid .stat-num{font-size:1.6rem}
+.results-grid .project-desc{margin:0.5rem 0 0}
 .project-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem}
 .project-title{font-size:1.25rem;font-weight:700;letter-spacing:-0.01em}
 .project-badges{display:flex;gap:6px;flex-wrap:wrap}
@@ -121,7 +125,7 @@ h1{animation-delay:0.2s}
 .hero-stats{animation-delay:0.5s}
 .blink{animation:blink 1s step-end infinite}
 @keyframes blink{50%{opacity:0}}
-@media(max-width:768px){.nav-links{display:none}.projects-grid{grid-template-columns:1fr}.edu-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.hero-stats{grid-template-columns:1fr}.exp-card{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.projects-grid{grid-template-columns:1fr}.edu-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.hero-stats{grid-template-columns:1fr}.exp-card{grid-template-columns:1fr}.results-grid{grid-template-columns:repeat(2,1fr)}.results-grid .project-card{padding:1.25rem}.results-grid .stat-num{font-size:1.15rem}}
 </style>
 </head>
 <body>
@@ -143,7 +147,7 @@ h1{animation-delay:0.2s}
 <section class="hero">
   <div class="hero-tag">seeking a Summer 2027 AI/ML internship · May–Aug</div>
   <h1>Arsalan<br><span>Amir Ali</span></h1>
-  <p class="hero-sub">CS (AI) student at York University building AI/ML systems.</p>
+  <p class="hero-sub">CS (AI) student at York University building AI/ML systems. Triton GPU kernel generation, an AI finance agent, and a rental negotiation marketplace.</p>
   <div class="hero-actions">
     <a href="#projects" class="btn-primary">view projects →</a>
     <a href="https://github.com/Arsalan-05" class="btn-outline">
@@ -196,8 +200,9 @@ h1{animation-delay:0.2s}
         <div class="project-title">FinSight AI</div>
         <div class="project-badges"><span class="badge badge-green">deployed</span><span class="badge badge-blue">solo</span></div>
       </div>
-      <p class="project-desc">Finance AI agent I built and deployed solo.</p>
+      <p class="project-desc">AI personal finance agent that answers questions about your own spending and flags money leaks. Built end to end by me.</p>
       <ul class="project-features">
+        <li>RAG over transaction history with LangGraph workflows and MCP-connected tools</li>
         <li>14 tools with hybrid search</li>
         <li>78-endpoint backend with 348 automated tests on every merge</li>
         <li>On a synthetic user with 45 planted money leaks it flags 39 of 45; a precision fix cut false alarms by about half</li>
@@ -213,7 +218,7 @@ h1{animation-delay:0.2s}
       </div>
     </div>
 
-    <div class="project-card inprogress">
+    <div class="project-card inprogress" style="grid-column:1/-1">
       <div class="project-header">
         <div class="project-title">KernelForge</div>
         <div class="project-badges"><span class="badge badge-orange">in progress</span></div>
@@ -236,6 +241,19 @@ h1{animation-delay:0.2s}
       </div>
     </div>
 
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="results">
+  <div class="section-tag">results</div>
+  <h2>Results <span class="dim">// measured</span></h2>
+  <div class="results-grid">
+    <div class="project-card"><div class="stat-num">285 / 300</div><p class="project-desc">reference kernels verified against PyTorch (15 ran out of memory)</p></div>
+    <div class="project-card"><div class="stat-num">30 of 60</div><p class="project-desc">test examples found leaked into training data; clean split rebuilt</p></div>
+    <div class="project-card"><div class="stat-num">39 / 45</div><p class="project-desc">planted money leaks flagged by FinSight AI; false alarms cut by about half</p></div>
+    <div class="project-card"><div class="stat-num">23 / 30</div><p class="project-desc">simulated negotiations closed on RoomFinderAI, none agreed to meet before a price was set (simulation)</p></div>
   </div>
 </section>
 

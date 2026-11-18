@@ -10,9 +10,9 @@ CS (AI) student at York University building AI/ML systems. Graduating April 2029
 
 | Project | Summary |
 | --- | --- |
-| [FinSight AI](https://github.com/Arsalan-05/FinSight_AI) | Finance AI agent built and deployed solo: 14 tools, hybrid search, 78-endpoint backend, 348 automated tests on every merge. |
-| [KernelForge](https://github.com/Arsalan-05/KernelForge) | Training a small model (Qwen2.5-Coder-1.5B) to write Triton GPU kernels, with an evaluation harness validated on 300 reference kernels. Fine-tuning in progress. |
-| [RoomFinderAI](https://roomfinderai.com) | Co-founded and co-built AI rental and negotiation marketplace on web, iOS and Android. |
+| [FinSight AI](https://github.com/Arsalan-05/FinSight_AI) | AI personal finance agent: RAG over transaction history, LangGraph workflows and MCP-connected tools, with automated tests and CI. |
+| [KernelForge](https://github.com/Arsalan-05/KernelForge) | Training a small model (Qwen2.5-Coder-1.5B) to write Triton GPU kernels, with an automated checker that tests every kernel against PyTorch. |
+| [RoomFinderAI](https://roomfinderai.com) | AI rental market analysis and negotiation platform, co-built with a co-founder. |
 
 ## Built with
 

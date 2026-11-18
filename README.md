@@ -2,7 +2,7 @@
 
 **Personal portfolio of Arsalan Amir Ali, a Computer Science student (AI specialization) at York University (Lassonde School of Engineering), Toronto.**
 
-🌐 **Site:** [arsalan-05.github.io](https://arsalan-05.github.io)
+**Site:** [arsalan-05.github.io](https://arsalan-05.github.io)
 
 CS (AI) student at York University building AI/ML systems. Graduating April 2029. Seeking a **Summer 2027 AI/ML internship**, available May to August 2027.
 

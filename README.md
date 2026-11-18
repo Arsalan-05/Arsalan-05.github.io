@@ -1,18 +1,18 @@
 # Arsalan-05.github.io
 
-**Personal portfolio of Arsalan, an AI Software Engineer and CS student at York University (Lassonde School of Engineering).**
+**Personal portfolio of Arsalan Amir Ali, a Computer Science student (AI specialization) at York University (Lassonde School of Engineering), Toronto.**
 
-🌐 **Live:** [arsalan-05.github.io](https://arsalan-05.github.io)
+🌐 **Site:** [arsalan-05.github.io](https://arsalan-05.github.io)
 
-I build production AI systems with LLMs, RAG, and Agentic AI, and work lower in the stack on fine-tuning models and optimizing GPU kernels. Seeking **Summer 2027 AI/SWE internships**.
+CS (AI) student at York University building AI/ML systems. Graduating April 2029. Seeking a **Summer 2027 AI/ML internship**, available May to August 2027.
 
 ## Featured work
 
 | Project | Summary |
 | --- | --- |
-| [FinSight AI](https://github.com/Arsalan-05/FinSight_AI) | Personal finance agent: RAG over transaction history, LangGraph workflows, MCP tools. Built solo, live in production. |
-| [KernelForge](https://github.com/Arsalan-05/KernelForge) | Fine-tuning an LLM to generate verified Triton GPU kernels for LLM inference. In active development. |
-| [RoomFinderAI](https://www.roomfinderai.com) | Co-founded rental analysis and negotiation platform with an LLM negotiation engine, live on web, iOS, and Android. |
+| [FinSight AI](https://github.com/Arsalan-05/FinSight_AI) | Finance AI agent built and deployed solo: 14 tools, hybrid search, 78-endpoint backend, 348 automated tests on every merge. |
+| [KernelForge](https://github.com/Arsalan-05/KernelForge) | Training a small model (Qwen2.5-Coder-1.5B) to write Triton GPU kernels, with an evaluation harness validated on 300 reference kernels. Fine-tuning in progress. |
+| [RoomFinderAI](https://roomfinderai.com) | Co-founded and co-built AI rental and negotiation marketplace on web, iOS and Android. |
 
 ## Built with
 
